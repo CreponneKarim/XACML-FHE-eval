@@ -16,6 +16,8 @@ if ! command -v cargo > /dev/null 2>&1; then
 	exit 1
 fi
 
+cargo build --bin hpdp_funcs --release
+
 aws login --profile root-session
 
 export AWS_PROFILE="root-session" 
