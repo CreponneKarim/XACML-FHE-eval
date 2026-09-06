@@ -1,0 +1,11 @@
+./XACML-FHE-eval/target/*
+./XACML-FHE-eval/.terraform/*
+./XACML-FHE-eval/terraform.tfstate
+./XACML-FHE-eval/terraform.tfstate.backup
+./XACML-FHE-eval/.terraform.tfstate.lock.info
+./XACML-FHE-eval/.terraform.lock.hcl
+./XACML-FHE-eval/Cargo.lock
+./XACML-FHE-eval/hpdp_funcs/Cargo.lock
+./XACML-FHE-eval/hpdp_types/Cargo.lock
+./XACML-FHE-eval/shared/Cargo.lock
+

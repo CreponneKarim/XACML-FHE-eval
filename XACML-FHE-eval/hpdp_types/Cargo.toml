@@ -1,0 +1,6 @@
+[workspace]
+members = ["types", "types_derive",]
+
+[workspace.dependencies]
+tfhe = { workspace = true}
+uuid = { workspace = true }

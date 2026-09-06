@@ -1,0 +1,20 @@
+[package]
+name = "shared"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+base64 = "0.22.1"
+serde = { version = "1.0.228", features = ["derive", "serde_derive"] }
+serde_json = "1.0.149"
+types = { version = "0.1.0", path = "../hpdp_types/types" }
+# uuid = { version = "1.23.0", features = ["v4"] }
+tfhe = { workspace = true }
+jsonwebtoken = "10.3.0"
+reqwest = { version = "0.13.2", features = ["json"] }
+sha256 = {workspace = true}
+actix-web= "4"
+rkyv = {workspace=true}
+csv = "1.4.0"
+uuid = { workspace = true }
+anyhow = { workspace = true }

@@ -1,0 +1,19 @@
+[package]
+name = "types"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.100"
+chrono = "0.4.44"
+num = "0.4.3"
+quick-xml = { version = "0.38.3", features = ["serde", "serde-types", "serialize"] }
+regex = "1.12.3"
+rkyv = "0.8.15"
+serde = { version = "1.0.228", features = ["derive", "serde_derive"] }
+tfhe = { workspace = true }
+# tfhe = { features = ["boolean", "integer", "shortint", "strings"], path="../../tfhe-rs/tfhe"}
+# uuid = { version = "1.19.0", features = ["v8", "v4"] }
+xsd-parser = { git="https://github.com/Bergmann89/xsd-parser", rev="a848753", features = ["reqwest", "web-resolver", "update-expectations","num"] }
+uuid = { workspace = true }
+

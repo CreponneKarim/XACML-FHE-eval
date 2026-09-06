@@ -1,0 +1,24 @@
+[package]
+name = "generate_1_5"
+edition = "2024"
+version = "0.9.0"
+license = "BSD-3-Clause-Clear"
+
+[workspace]
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+
+# TFHE-rs
+# 1.5.4 depends on tfhe-csprng 0.8.1 that introduced a prng fix
+# This fix is required to generate the `compressed_xof_key_set` correctly
+tfhe = { git = "https://github.com/zama-ai/tfhe-rs.git", tag = "tfhe-rs-1.5.4", features = [
+    "boolean",
+    "integer",
+    "shortint",
+    "zk-pok",
+    "experimental-force_fft_algo_dif4",
+] }
+tfhe-versionable = { git = "https://github.com/zama-ai/tfhe-rs.git", tag = "tfhe-rs-1.5.4" }
+
+tfhe-backward-compat-data = { path = "../.." }
